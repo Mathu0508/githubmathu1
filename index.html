@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="icon" href="education1.png" type="image/png">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-image: url('book4.jpg');
+                background-size :100% 69%;
+                background-repeat: no-repeat;
+                color:white;
+                margin: left 50px;;
+                margin-bottom: 10px;
+                margin-top:none;
+            }
+            .social-media {
+                display:flex;
+                align-items:center;
+                margin-left:50px;
+                justify-content: flex-start;
+                gap:20px;
+                background-color: black;
+                padding-top:0;
+            }    
+
+            .social-media a {
+                color:white;            
+                font-size:15px;       
+                margin-top:0px; 
+                padding: -10px; 
+                transition: color 0.3s ease; 
+            }
+
+            .social-media a:hover {
+            color: #00aced;        
+            }
+            .social-media p {
+            margin:0;
+            font-size: 16px;
+            align-items: right;
+            color: white;
+            }
+            .social-media .contact-info {
+                margin-left: auto;
+                display: flex;
+                gap:4px;
+                align-items: center;
+}
+
+            header {
+                color: white;
+                font-size:xx-small;
+                padding:0px;;
+                display: flex; 
+                margin-left:50px;
+                justify-content: space-between; 
+                align-items: center; 
+                margin-bottom:-30px;
+              }
+              header h1 {
+                font-size: 40px; /* Adjust this value to your desired size */
+}
+            hr {
+                margin-top:5px;
+                margin-left:50px;;
+                margin-bottom:5px;
+                padding-left:5px; 
+                }
+
+            nav {
+                font-size:11px;
+                display: flex;
+                gap: 50px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-size:medium;
+            }
+
+            select {
+                background-color: #f8f3f3;
+                color: rgb(8, 8, 8);
+                padding: 8px;
+                border: 1px solid #faf5f5;
+                border-radius: 5px;
+                font-size:small;
+                font-family: Arial, sans-serif;
+                cursor: pointer;
+                width: 100%;
+            }
+            .dropdown {
+                position: relative;
+            }
+            .dropdown-btn {
+                color: white;
+                padding: 1px;
+                text-decoration: none;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 30px; 
+                background-color:white;
+                color:black;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                font-size: medium;
+    opacity: 0; /* Make it transparent initially */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block; 
+                opacity: 1;
+            }
+            h2,p{
+                margin:50px;
+            }
+            button{
+                background-color:orangered;
+                color:white;
+                border: 20px;
+                width: 170px;
+                height: 50px;
+                font-size:large;
+                margin-left:50px;
+                padding:10px;
+                font-weight:bolder;
+            }
+            button:hover{
+                
+                cursor: pointer;
+
+            }
+            .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap:160px;
+            margin-left:-90px;
+           
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            /* opacity: 30%; */
+            border-radius: 8px;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding:30px;
+            width: 310px;
+            margin:0;
+            transition: transform 0.3s ease;
+           
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h4 {
+            color:white;
+            margin-top:5px;
+            font-size:larger;
+            font-weight: bold;
+            text-align: center;
+            /* opacity: 100%; */
+        }
+
+        .card p {
+            color: grey;
+            text-align: center;
+            margin: 0;
+            padding:0 10px;
+            width:auto;
+}
+        .card:first-child {
+    margin-left: 50px;
+}
+        footer {
+            font-size: larger;
+            color: black;
+            font-weight: bolder;
+            padding:0;
+        }
+        </style>
+    </head>
+    <body>
+        <div style=background-color:black class="social-media" width="100%" >
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <div class="contact-info">
+                <p><a href="tel:+953 012 3654 896" style="color:white; text-decoration:none;">+953 012 3654 896</a> </p>
+                <p><a href="support@colorlib.com" style="color:white; text-decoration:none;">support@colorlib.com</a></p>
+            </div>
+        </div>
+        <header> <h1><img src="education1.png" alt="Logo" width="30" height="30"> EDUCATION</h1>
+            <nav>
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="#COURSES">COURSES</a>
+                <a href="#EVENTS">EVENTS</a> 
+                <a href="#GALLERY">GALLERY</a>
+                <!-- Custom Blog Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">
+                        BLOGS <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item" onclick="window.location.href='https://www.edutopia.org'">Edutopia
+                        </div>
+                        <div class="dropdown-item" onclick="window.location.href='https://www.teachthought.com'">Teach Thought
+                        </div>
+                        <div class="dropdown-item" onclick="window.location.href='https://www.edsurge.com'">EdSurge
+                        </div>
+                        <div class="dropdown-item" onclick="window.location.href='https://www.kqed.org/mindshift'">Mindshift
+                        </div>
+                    </div>
+                </div>
+                <!-- Custom Pages Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">
+                        PAGES <i class='fas fa-chevron-down'></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item" onclick="window.location.href='https://www.khanacademy.org'">Khan Academy
+                        </div>
+                        <div class="dropdown-item" onclick="window.location.href='https://www.coursera.org'">Coursera
+                        </div>
+                        <div class="dropdown-item" onclick="window.location.href='https://www.futurelearn.com'">FutureLearn
+                        </div>
+                        <div class="dropdown-item" onclick="window.location.href='https://ed.ted.com'">TED-Ed
+                        </div>
+                    </div>
+                </div>
+            <a href="#CONTACT">CONTACT</a>
+        </nav>
+           </header>
+           <hr><br><br>
+      <h2 style="font-size:xxlarger;">WE ENSURE BETTER EDUCATION <br>FOR A BETTER WORLD</h2>
+        <p style="color: grey;"> Education helps to provide knowledge, develop a logical attitude and enhance the capability of an individual.Education upgrades the thinking <br>of society and helps to uproot social evils.It helps the uniform development of a country by fighting the inequalities of society</p><br><br><br>
+            <a  href="https://in.pinterest.com/pin/254664553914554657/" target="_blank">
+                <button type="submit">GET STARTED</button>
+                 </a><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="container">
+                    <div class="card">
+                        <h4 style="color:whitesmoke">Learn online classes</h4>
+                        <p>Usage of internet is becoming more common due to more 
+                            advancement of technology.</p>
+                    </div>
+                        <div class="card">
+                        <h4>No.1 of Universities</h4>
+                        <p>For many of us,our very first experience of learning about 
+                            celestial bodies when we saw our first.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Huge Library</h4>
+                        <p>If you are a serious astronomy fnatic like a lot of us 
+                            are,you can probably remember that on event</p>
+                    </div>
+                    </div>
+                    <center>
+            <footer>
+                <h2>Popular courses We offer</h2>
+                <p style="font-size: medium; font-weight: lighter";>there is a moment in the life of any aspiring</p>
+                            </footer>
+        </center>
+
+    </body>
+</html>
